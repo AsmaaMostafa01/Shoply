@@ -226,3 +226,111 @@ section{
     font-size: 20px;
     padding-top:30px;
 }
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .content img, .form-container {
+        max-width: 100%;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navmenu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .navmenu li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navmenu.active {
+        display: flex;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .footer-section address {
+        line-height: 1.5;
+    }
+
+    .footer-section .social-icons {
+        margin-top: 10px;
+    }
+
+    /* Responsive Form Styles */
+    .form-container {
+        padding: 20px;
+    }
+
+    .form-container h2 {
+        font-size: 24px;
+    }
+
+    .form-container p {
+        font-size: 14px;
+    }
+
+    .form-container input {
+        font-size: 14px;
+    }
+
+    .form-container button, .form-container .google-signup {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* Minimum Width Responsive Styles */
+@media (max-width: 480px) {
+    .form-container {
+        padding: 15px;
+        box-shadow: none;
+        border: none;
+    }
+
+    .form-container h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .form-container input {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .form-container button {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .form-container .google-signup {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .form-container .login-link a {
+        font-size: 12px;
+    }
+}
